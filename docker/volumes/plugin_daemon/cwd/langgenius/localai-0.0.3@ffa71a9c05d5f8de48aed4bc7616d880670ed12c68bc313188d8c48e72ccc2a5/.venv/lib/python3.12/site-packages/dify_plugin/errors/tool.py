@@ -1,0 +1,2 @@
+class ToolProviderCredentialValidationError(Exception):
+    pass

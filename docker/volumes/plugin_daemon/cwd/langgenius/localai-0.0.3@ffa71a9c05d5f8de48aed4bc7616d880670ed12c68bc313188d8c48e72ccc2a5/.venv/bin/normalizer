@@ -1,0 +1,8 @@
+#!/app/storage/cwd/langgenius/localai-0.0.3@ffa71a9c05d5f8de48aed4bc7616d880670ed12c68bc313188d8c48e72ccc2a5/.venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli.cli_detect())
